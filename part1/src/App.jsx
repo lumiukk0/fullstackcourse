@@ -7,12 +7,20 @@ const Header = ({course}) => {
     </div>
   );
 };
+
+const Part = ({p, e}) => {
+  return (
+    <div>
+      <p>{p} {e}</p>
+    </div>
+  );
+};
 const Content = ({p1, e1, p2, e2, p3, e3}) => {
   return (
     <div>
-      <p>{p1} {e1}</p>
-      <p>{p2} {e2}</p>
-      <p>{p3} {e3}</p>
+      <Part p={p1} e={e1}/>
+      <Part p={p2} e={e2}/>
+      <Part p={p3} e={e3}/>
     </div>
   );
 };
